@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="02"  author="Tijana">
+        <comment>Inserting Station</comment>
+
+        <addColumn tableName="radioStations">
+            <column name="name" type="VARCHAR(255)"/>
+        </addColumn>
+        <insert tableName="radioStations">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Radio1"/>
+            <column name="url" value="sdfjasdnfkjasndfkj"/>
+        </insert>
+        <insert tableName="radioStations">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Radio2"/>
+            <column name="url" value="adfadsdnfkjasndfkj"/>
+        </insert>
+        <insert tableName="radioStations">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Radio3"/>
+            <column name="url" value="dfgfsdgsdfe"/>
+        </insert>
+        <insert tableName="radioStations">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Radio4"/>
+            <column name="url" value="kjasndfkj"/>
+        </insert>
+        <insert tableName="radioStations">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="radio5"/>
+            <column name="url" value="dfgdfgffg"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

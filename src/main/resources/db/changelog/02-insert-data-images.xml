@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="03" author="Tijana">
+        <comment>Inserting Images</comment>
+
+
+        <insert tableName="images">
+            <column name="id" valueNumeric="1"/>
+            <column name="path" value="badlkfnsldkfns"/>
+            <column name="radioStations" valueNumeric="01"/>
+        </insert>
+        <insert tableName="images">
+            <column name="id" valueNumeric="2"/>
+            <column name="path" value="fasdfadsfasf"/>
+            <column name="radioStations" valueNumeric="02"/>
+        </insert>
+        <insert tableName="images">
+            <column name="id" valueNumeric="3"/>
+            <column name="path" value="dfasdfadfds"/>
+            <column name="radioStations" valueNumeric="02"/>
+        </insert>
+        <insert tableName="images">
+            <column name="id" valueNumeric="4"/>
+            <column name="path" value="dfasflmklekr"/>
+            <column name="radioStations" valueNumeric="03"/>
+        </insert>
+        <insert tableName="images">
+            <column name="id" valueNumeric="5"/>
+            <column name="path" value="sdlfkmelwkm"/>
+            <column name="radioStations" valueNumeric="01"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

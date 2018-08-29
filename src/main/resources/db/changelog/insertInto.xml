@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+    <changeSet id="19"  author="Tijana">
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Srbija"/>
+        </insert>
+        <insert tableName="zemlja">
+        <column name="id" valueNumeric="2"/>
+        <column name="name" value="Crna Gora"/>
+        </insert>
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Makedonija"/>
+        </insert>
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Madjarska"/>
+        </insert>
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="Slovenija"/>
+        </insert>
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="6"/>
+            <column name="name" value="Hrvatska"/>
+        </insert>
+        <insert tableName="zemlja">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="BiH"/>
+        </insert>
+
+
+    </changeSet>
+
+</databaseChangeLog>
